@@ -65,8 +65,8 @@ COPY ./openerp-server.conf /opt/odoo/etc/
 # Get Odoo code
 WORKDIR /opt/odoo
 RUN set -x; \
-  git clone --depth 1 https://github.com/oca/ocb.git -b 9.0 9.0 \
-  && rm -rf 9.0/.git
+  git clone --depth 1 https://github.com/oca/ocb.git -b 10.0 10.0 \
+  && rm -rf 10.0/.git
 
 USER 0
 
